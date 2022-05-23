@@ -51,8 +51,8 @@ class Presensi_waktu_model extends CI_Model {
 
     function add($data = array()) {
 
-        $this->db->where('data_waktu_day_id',$data['data_waktu_day_id']);
-        $this->db->delete('data_waktu');
+        // $this->db->where('data_waktu_day_id',$data['data_waktu_day_id']);
+        // $this->db->delete('data_waktu');
 
         if (isset($data['data_waktu_id'])) {
             $this->db->set('data_waktu_id', $data['data_waktu_id']);
